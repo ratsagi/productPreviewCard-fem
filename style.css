@@ -59,6 +59,7 @@
   #root, #__next {
     isolation: isolate;
   }
+  
   body{
     display: flex;
     min-height: 100vh;
@@ -87,9 +88,7 @@
     border-radius: 15px 15px 0 0;
   }
   .product__section{ 
-    margin: 1.25rem;
-   
-    
+    margin: 1.25rem;  
   }
   .product__name{
     text-transform:uppercase ;
@@ -97,7 +96,12 @@
   h2{
     font-family: "Fraunces", serif;
     font-weight: 700;
+    font-size: 1.5rem;
     padding: 0.625rem 0;
+  }
+  p{
+    font-family: "Montserat",sans-serif;
+    color: var(--darkGrayishBlue);
   }
   .product__title{
     line-height: 1;
@@ -106,6 +110,9 @@
     display: flex;
     align-items: center;
     gap: 0.625rem;
+  }
+  .product__price-discount{
+    color: var(--darkCyan);
   }
   .product__btn-section{
     display: flex;
@@ -123,22 +130,24 @@
   .product__btn-section:hover{
     background-color: var(--veryDarkBlue);
   }
-  @media (min-width: 375px) {
+  @media (min-width: 23.43em) {
     .product{
         display:flex;
         background-color:var(--cream);
-        max-width: 32rem;
+        max-width: 34rem;
         
     }
     .product__image{
         background-image: url("images/image-product-desktop.jpg");
         border-top-right-radius:0;
+        border-bottom-left-radius:15px;
     }
     .product__section{
         margin:0;
-        /* padding:0.8rem 1.6rem; */
         padding: 15px 30px;
         background-color: white;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
     
     }
     
