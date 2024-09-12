@@ -17,9 +17,13 @@
 </head>
 <body>
   <main>
-    <h1 class="sr-only">This is my solution to product card component</h1>
+    <!-- <h1 class="sr-only">This is my solution to product card component</h1> -->
     <article class="product">
-      <div class="product__image"></div>
+      <!-- <div class="product__image"></div> -->
+       <picture>
+        <source srcset="/images/image-product-desktop.jpg" media="(min-width:32rem)">
+        <img src="images/image-product-mobile.jpg" alt="perfume">
+       </picture>
       <section class="product__section">
           <p class="product__name">Perfume</p>
           <h2 class="product__title">Gabrielle Essence Eau De Parfum</h2>
@@ -30,7 +34,7 @@
             <s class="product__price-original">$169.99</s>
           </section>
           <section class="product__btn-section">
-            <img src="images/icon-cart.svg" alt="icon of the cart">
+            <img src="images/icon-cart.svg" alt="">
             <a href="#"class="product__cta-btn">Add to Cart</a>
           </section>
           
