@@ -137,7 +137,7 @@
   .product__btn-section:hover{
     background-color: var(--veryDarkBlue);
   }
-  @media (min-width: 23.43em) {
+  @media (min-width: 23.4375em) {
     .product{
         display:flex;
         background-color:var(--cream);
