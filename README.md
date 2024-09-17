@@ -6,17 +6,13 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [my solution](https://your-solution-url.com)
+- Solution URL: [my solution](https://www.frontendmentor.io/solutions/respponsive-product-preview-card-using-mobile-first-approach-w5HK8TJd7O)
 - Live Site URL: [Live site](https://ratsagi.github.io/productPreviewCard-fem/)
 
 ## My process
@@ -59,6 +55,13 @@ Also find out how to limit the size of text to place it correctly by using max-i
       max-inline-size: 10ch;
     }
 ```
+Find out the solution to change image based on screen size by using picture:
+```html
+<picture>
+        <source srcset="images/image-product-desktop.jpg" media="(min-width:32rem)">
+        <img src="images/image-product-mobile.jpg" alt="perfume">
+       </picture>
+ ```
 ### Continued development
 
 I will continue to explore responsive web design and apply them in future projects. 
